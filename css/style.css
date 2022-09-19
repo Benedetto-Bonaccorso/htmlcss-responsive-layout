@@ -122,15 +122,56 @@ main{
     align-items: flex-end;
 }
 
+.planning>*{
+    margin: 2rem;
+}
+
 .container-6{
     width: calc((100% /12) *6);
 }
 
-.short{
-    height: 60%;
+.full{
+    align-self: flex-start;
 }
-.short>img{
+
+.full>.subcontainer>h2{
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+.full>.subcontainer>*{
+    padding: 1rem 0;
+}
+
+.short{
+    margin-top: 10rem;
+    height: 60%;
+    background-color: aliceblue;
+    border-radius: 60px;
+}
+
+.short>.subcontainer{
+    text-align: center;
+}
+
+.short>.subcontainer>*{
+    padding-top:5rem;
+}
+
+.short>.subcontainer>p{
+    padding-bottom: 2rem;
+}
+
+.short>.subcontainer>p{
+    padding-bottom: 2rem;
+}
+
+.short>.subcontainer>img{
     width: 60%;
+}
+
+.symbol{
+    padding-bottom: 2rem;
 }
 
 img{
