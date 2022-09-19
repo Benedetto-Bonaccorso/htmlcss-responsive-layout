@@ -14,11 +14,19 @@ a:hover{
     filter: brightness(0.7);
 }
 
-header>.section{
+.logo:hover{
+    filter: brightness(1);
+}
+
+.section{
     width: 70%;
+}
+
+.section{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 70%;
 }
 
 header>.section>*{
@@ -44,7 +52,87 @@ header>.section>.logo>img{
 .button>a{
     background-color: aliceblue;
     border-radius: 20px;
-    padding: 0.5rem 1rem ;
+    padding: 0.5rem 1rem;
     text-decoration: none;
     color: black;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    padding-top: 5rem;
+}
+
+.col-8{
+    width: calc((100% /12) *8);
+    padding: 1rem;
+}
+
+.col-4{
+    width: calc((100% /12) *4);
+    padding: 1rem;
+}
+
+.col-4>.card>img{
+    width: 50%;
+    
+}
+
+.col-8>.card>img{
+    margin-bottom: 0;
+}
+
+.card{
+    display: flex;
+    border-radius: 30px;
+    background-color: aquamarine;
+    height: 100%;
+}
+
+.card>*{
+    margin: 1rem;
+}
+
+.col-4>.card{
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-text>*{
+    padding-top: 3rem;
+}
+
+.purple{
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.planning{
+    display: flex;
+    align-items: flex-end;
+}
+
+.container-6{
+    width: calc((100% /12) *6);
+}
+
+.short{
+    height: 60%;
+}
+.short>img{
+    width: 60%;
+}
+
+img{
+    width: 100%;
 }
