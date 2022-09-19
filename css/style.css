@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+
+a:hover{
+    filter: brightness(0.7);
+}
+
+header>.section{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header>.section>*{
+    padding: 0.6rem 0;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+}
+
+header>.section>.links>a{
+    margin: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+header>.section>.logo>img{
+    width: 5rem;
+    padding-left: 0;
+}
+
+.button>a{
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 0.5rem 1rem ;
+    text-decoration: none;
+    color: black;
+}
