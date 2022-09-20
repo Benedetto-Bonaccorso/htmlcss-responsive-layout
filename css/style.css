@@ -1,3 +1,12 @@
+:root{
+    --blue: #0084FD;
+    --light-blue: #B5DDFF;
+    --purple: #9792E4;
+    --orange: #FDC15F;
+    --gray: #333333;
+    --light-gray: #737373;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -9,7 +18,7 @@ img{
 }
 
 header{
-    background-color: aqua;
+    background-color: var(--blue);
     display: flex;
     justify-content: center;
 }
@@ -48,13 +57,19 @@ header>.section>.links>a{
     text-decoration: none;
 }
 
+header>.section>.links>.button{
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+}
+
 header>.section>.logo>img{
     width: 5rem;
     padding-left: 0;
 }
 
 .button>a{
-    background-color: aliceblue;
+    background-color: white;
     border-radius: 20px;
     padding: 0.5rem 1rem;
     text-decoration: none;
@@ -85,6 +100,24 @@ main{
     padding: 1rem;
 }
 
+.col-3{
+    width: calc((100% /12) *3);
+    padding: 1rem;
+    padding-bottom: 2rem;
+    background-color: white;
+    border-radius: 20px;
+    margin: 1rem;
+    text-align: left;
+}
+
+
+.col-4>.button{
+    padding: 0.5rem 3rem;
+    text-decoration: none;
+    color: purple;
+    font-size: 18px;
+}
+
 .col-8>.card>.left-text{
     width: 140%;
 }
@@ -98,7 +131,7 @@ main{
 .card{
     display: flex;
     border-radius: 30px;
-    background-color: aquamarine;
+    background-color:var(--light-blue);
     height: 100%;
 }
 
@@ -128,16 +161,17 @@ main{
 }
 
 .button{
-    background-color: aqua;
+    background-color: white;
     padding: 0.6rem 5rem;
     border-radius: 15px;
 }
 
 .purple{
-    background-color: purple;
+    background-color: var(--purple);
     display: flex;
     justify-content: center;
     width: 100vw;
+    margin: 3rem 0;
 }
 
 .planning{
@@ -195,7 +229,7 @@ main{
 .symbol{
     text-decoration: none;
     color: black;
-    background-color: gray;
+    background-color: var(--purple);
     padding: 0.8rem 1rem;
     border-radius: 40px;
 }
@@ -216,7 +250,7 @@ main{
 .quotation{
     display: flex;
     align-items: center;
-    background-color: purple;
+    background-color: var(--purple);
     padding: 1rem 0.5rem;
     border-radius: 30px;
 }
@@ -236,4 +270,56 @@ main{
 
 .quotation-text>p{
     margin-bottom: 1rem;
+}
+
+.vertical>.row{
+    margin: 1rem;
+}
+
+.vertical>.row>.col-4{
+    text-align: left;
+    background-color: var(--purple);
+    
+    padding: 1rem 0rem;
+    height: auto;
+}
+
+.vertical>.row>.col-4>*{
+    margin: 1rem;
+}
+
+.vertical>.row>.col-4>.card{
+    align-items: flex-start;
+    text-align: left;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.vertical>.row>.col-4>.card>*{
+    margin: 0.5rem 1.5rem;
+    line-height: 200%;
+}
+
+.vertical>.row>.col-4>.card>a{
+    margin: 0.5rem 1.5rem;
+    line-height: 100%;
+}
+
+.vertical>.row>.col-4>.card>h1{
+    margin-top: 2rem;
+}
+
+.vertical>.row>.col-4>.card>a{
+    color: white;
+    background-color: var(--purple);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.colored{
+    color: var(--purple);
+}
+
+.gray{
+    color: var(--light-gray);
 }
