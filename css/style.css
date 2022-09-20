@@ -161,8 +161,9 @@ main{
 
 .left-text>.button{
     text-decoration: none;
-    color: black;
+    color: white;
     margin-top: 1rem;
+    background-color: var(--blue);
 }
 
 .button{
@@ -177,6 +178,7 @@ main{
     justify-content: center;
     width: 100vw;
     margin: 3rem 0;
+    padding-bottom: 2rem;
 }
 
 .planning{
@@ -336,13 +338,52 @@ main{
 .about-us{
     display: flex;
     justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.about{
+    margin-right: 5rem;
+}
+
+.about>h1{
+    font-size: 40px;
+    color: var(--purple);
+    margin-bottom: 2rem;
+}
+
+.linkedin{
+
 }
 
 .linkedin>.picture>img{
-    width: 10rem;
-    height: 6rem;
     object-fit: cover;
     aspect-ratio: 1/1;
     overflow: hidden;
-    border-radius: 100px;
+    border-radius: 500px;
+}
+
+.picture{
+    position: relative;
+}
+
+.picture>.quotation-mark{
+    filter: invert(60%) sepia(19%) saturate(1183%) hue-rotate(204deg) brightness(101%) contrast(79%);
+    position: absolute;
+    width: 30%;
+    left: 13rem;
+}
+
+.linkedin>h3{
+    color: var(--purple);
+    font-weight: bolder;
+    width: 70%;
+    margin: 2rem 0;
+}
+
+.linkedin-button{
+    padding: 0.5rem 1rem;
+    background-color: var(--purple);
+    text-decoration: none;
+    color: white;
+    border-radius: 35px;
 }
