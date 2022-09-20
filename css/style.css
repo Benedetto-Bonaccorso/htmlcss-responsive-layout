@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+img{
+    width: 100%;
+}
+
 header{
     background-color: aqua;
     display: flex;
@@ -77,16 +81,18 @@ main{
 
 .col-4{
     width: calc((100% /12) *4);
+    height: calc((70vw /12) *4);
     padding: 1rem;
 }
 
-.col-4>.card>img{
-    width: 50%;
-    
+.col-8>.card>.left-text{
+    width: 140%;
 }
 
 .col-8>.card>img{
+    margin-top: 10%;
     margin-bottom: 0;
+    margin-right: 5rem;
 }
 
 .card{
@@ -96,18 +102,35 @@ main{
     height: 100%;
 }
 
-.card>*{
-    margin: 1rem;
-}
-
 .col-4>.card{
     text-align: center;
     flex-direction: column;
     align-items: center;
 }
 
+.card>*{
+    margin: 1rem 2rem;
+}
+
+.col-4>.card>img{
+    width: 30%;
+    margin-top: 3rem;
+}
+
 .left-text>*{
-    padding-top: 3rem;
+    margin: 2.5rem 0;
+}
+
+.left-text>.button{
+    text-decoration: none;
+    color: black;
+    margin-top: 1rem;
+}
+
+.button{
+    background-color: aqua;
+    padding: 0.6rem 5rem;
+    border-radius: 15px;
 }
 
 .purple{
@@ -145,9 +168,9 @@ main{
 
 .short{
     margin-top: 10rem;
-    height: 60%;
     background-color: aliceblue;
     border-radius: 60px;
+    padding-bottom: 2rem;
 }
 
 /* prova */
@@ -157,11 +180,8 @@ main{
 }
 
 .short>.subcontainer>*{
-    padding-top:5rem;
-}
-
-.short>.subcontainer>p{
-    padding-bottom: 2rem;
+    margin: 0 1rem;
+    margin-top:3rem;
 }
 
 .short>.subcontainer>p{
@@ -173,9 +193,47 @@ main{
 }
 
 .symbol{
-    padding-bottom: 2rem;
+    text-decoration: none;
+    color: black;
+    background-color: gray;
+    padding: 0.8rem 1rem;
+    border-radius: 40px;
 }
 
-img{
-    width: 100%;
+.vertical{
+    margin-top: 3rem;
+    flex-direction: column;
+    gap: 2.5rem;
+    text-align: center;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.quotation{
+    display: flex;
+    align-items: center;
+    background-color: purple;
+    padding: 1rem 0.5rem;
+    border-radius: 30px;
+}
+
+.quotation>img{
+    width: 10rem;
+    height: 6rem;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 100px;
+}
+
+.quotation-text{
+    margin: 0 2rem;
+}
+
+.quotation-text>p{
+    margin-bottom: 1rem;
 }
