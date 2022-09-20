@@ -332,3 +332,17 @@ main{
 .big{
     font-size: 50px;
 }
+
+.about-us{
+    display: flex;
+    justify-content: center;
+}
+
+.linkedin>.picture>img{
+    width: 10rem;
+    height: 6rem;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 100px;
+}
